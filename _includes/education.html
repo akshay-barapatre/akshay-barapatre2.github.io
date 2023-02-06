@@ -1,4 +1,4 @@
-<h2>Projects</h2>
+<h2>Education</h2>
 <div class="card-container">
     {% for item in site.data.education %}
     {% if item.page-name %}
@@ -8,11 +8,12 @@
     {% endif %}
       <div class="card">
         <div class="info">
-          <p class="title">{{ item.title }}</p>
-          <p class="location">{{ item.event }}</p>
-          <p class="dates">{{ item.date }}</p>
+          <p class="title">{{ item.course }}</p>
+          <p class="location">{{ item.institute }}</p>
+          <p class="dates">{{ item.dates }}</p>
         </div>
       </div>
     </a>
     {% endfor %}
   </div>
+    
